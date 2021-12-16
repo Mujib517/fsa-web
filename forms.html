@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="txtFName">First Name</label>
+            <input id="txtFName" type="text" placeholder="First name" />
+        </div>
+        <br />
+        <div>
+            <label for="txtLName">Last Name</label>
+            <input id="txtLName" type="text" placeholder="Last name" />
+        </div>
+        <br />
+        <div>
+            <label for="radioMale">Male</label>
+            <input name="gender" id="radioMale" type="radio" title="Male" />
+            <label for="radioFemale">Female</label>
+            <input name="gender" id="radioFemale" type="radio" title="Female" />
+        </div>
+        <br />
+        <div>
+            <label for="selectCourse">Courses</label>
+            <select id="selectCourse">
+                <option>--select--</option>
+                <optgroup label="Strongly Typed">
+                    <option value="1">C#</option>
+                    <option value="2">Java</option>
+                </optgroup>
+                <optgroup label="Loosely Typed">
+                    <option value="3">Javascript</option>
+                    <option value="4">Python</option>
+                </optgroup>
+            </select>
+        </div>
+        <br />
+        <div>
+            <input min="0" max="10" type="number" />
+        </div>
+        <br />
+        <div>
+            <input type="color" />
+        </div>
+        <br />
+        <div>
+            <input type="range" step="2" min="0" max="100" />
+        </div>
+    </form>
+</body>
+
+</html>
