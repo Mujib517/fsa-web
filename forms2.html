@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.css" />
+    <!-- inline styles -->
+    <!-- internal styles -->
+    <!-- external styles -->
+    <!-- selectors -->
+    <!-- external : lowest -->
+    <!-- internal  -->
+    <!-- inline: highest -->
 </head>
 
 <body>
@@ -13,24 +22,28 @@
         <h4>Login Form</h4>
     </header>
     <main>
+        <div class="myDiv">
+            This is a div
+            <img src="img/my-img.jpeg" />
+        </div>
         <!-- post has body -->
         <!-- get has no body, query string -->
         <form action="forms.html" method="POST">
             <div>
-                <input name="email" type="text" placeholder="Email" />
+                <input id="txtEmail" class="text" name="email" type="text" placeholder="Email" />
             </div>
-            <br />
             <div>
-                <input name="password" type="password" placeholder="Password" />
+                <input id="txtPwd" class="text" name="password" type="password" placeholder="Password" />
             </div>
-            <br />
             <div>
                 <input id="chkSave" type="checkbox" />
                 <label for="chkSave">Remember credentials</label>
             </div>
-            <br />
             <div>
-                <input type="submit" value="Login" />
+                <button type="submit">
+                    <i class="fa fa-address-book"></i>
+                    Login
+                </button>
             </div>
         </form>
     </main>

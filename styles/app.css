@@ -1,0 +1,56 @@
+/* named colors */
+/* hex value  */
+/*  binary 0, 1 */
+/* decimal 0, 9 */
+/*  base 16: 0 - 15  */
+/* 0-255 */
+/* css v3 */
+body {
+    margin:0;
+    padding:0;
+    font-family:'Times New Roman', Times, serif;
+}
+.text {
+    height:20px; 
+    width:150px;
+    color: #369;
+    border:0;
+    border-bottom: 1px double #369;
+    font-weight: lighter;
+    font-size: 10px;
+    font-style:normal;
+    /* margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right:10px; */
+    /* T R B L */
+    margin: 10px 0 10px 5px;
+    /* color: red; */
+    /* color: rgb(200,20,50); */
+    /* color: rgba(200,20,50, 0.4); */
+}
+/* element selector */
+input[type="submit"]{
+    background-color:#fff;
+    border:1px solid #369;
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    margin:10px;
+    /* border-left:1px solid #369;
+    border-right:1px solid #369;
+    border-bottom:1px solid #369;
+    border-top:1px solid #369; */
+}
+
+.myDiv{
+    min-width: 200px;
+    height: 25px;
+    padding: 20px 0 0 30px;
+    border:1px solid grey;
+}
+
+.myDiv > img {
+    width: 200px;
+    height: 200px;
+}
