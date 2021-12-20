@@ -1,0 +1,22 @@
+.h1{
+    color: #369;
+    text-decoration: line-through;
+    text-align: right;
+    text-transform:uppercase;
+    /* text-shadow: 2px 3px; */
+    background-color: aliceblue; 
+}
+
+.div{
+    background-image:url("../img/email.png");
+    border:1px solid grey;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ul {
+    list-style-type:none;
+}
+
+
