@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-full.png" width="100" height="30" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/img1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/img2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/img3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div id="about" class="col-md-10">
+                <h3>About us</h3>
+                Dummy text: Its function as a filler or as a tool for comparing the visual impression of different
+                typefaces
+                Dummy text is text that is used in the publishing industry or by web designers to occupy the space which
+                will later be filled with 'real' content. This is required when, for example, the final text is not yet
+                available. Dummy text is also known as 'fill text'. It is said that song composers of the past used
+                dummy
+                texts as lyrics when writing melodies in order to have a 'ready-made' text to sing with the melody.
+                Dummy
+                texts have been in use by typesetters since the 16th century.
+
+                The usefulness of nonsensical content
+                Dummy text is also used to demonstrate the appearance of different typefaces and layouts, and in general
+                the
+                content of dummy text is nonsensical. Due to its widespread use as filler text for layouts,
+                non-readability
+                is of great importance: human perception is tuned to recognize certain patterns and repetitions in
+                texts. If
+                the distribution of letters and 'words' is random, the reader will not be distracted from making a
+                neutral
+                judgement on the visual impact and readability of the typefaces (typography), or the distribution of
+                text on
+                the page (layout or type area). For this reason, dummy text usually consists of a more or less random
+                series
+                of words or syllables. This prevents repetitive patterns from impairing the overall visual impression
+                and
+                facilitates the comparison of different typefaces. Furthermore, it is advantageous when the dummy text
+                is
+                relatively realistic so that the layout impression of the final publication is not compromised.
+            </div>
+
+            <div id="services" class="d-none d-sm-block">
+                <ul class="list-group">
+                    <li class="list-group-item bg-success">Services</li>
+                    <li class="list-group-item">Mobile Development</li>
+                    <li class="list-group-item">Website Development</li>
+                    <li class="list-group-item">Game Development</li>
+                    <li class="list-group-item">Dev ops</li>
+                </ul>
+            </div>
+
+            <div id="footer" class="navbar navbar-light bg-light justify-content-center">
+                &copy;2021 invincibleminds.com
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

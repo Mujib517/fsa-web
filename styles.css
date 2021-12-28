@@ -1,0 +1,20 @@
+.col{
+    border:1px solid grey;
+}
+
+.container, .container-fluid{
+    /* border:1px solid red; */
+}
+
+.border{
+    border:1px solid grey;
+}
+
+button{
+    background-color:grey;
+    border:0;
+}
+
+ul li a {
+    color:#369 !important;
+}
