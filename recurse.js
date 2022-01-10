@@ -25,7 +25,7 @@ function printRec(n) {
 
 // printRec(10);
 // fibonacci(5);
-// 1 1 2 3 5 8 13
+// 1 1 2 3 5 8
 
 function fact(n) {
     if (n <= 1) return 1;
