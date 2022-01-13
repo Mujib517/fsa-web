@@ -10,7 +10,7 @@
 // html, css - w3c
 // interface
 // keyword class
-
+// es6
 class AbstractMobile {
 
     constructor() {
