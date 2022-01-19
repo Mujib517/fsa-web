@@ -11,7 +11,7 @@ function addAsync(a, b, cb) {
     setTimeout(() => {
         var c = a + b;
         cb(c);
-    }, 500);
+    }, 1000);
 }
 
 function subAsync(a, b, cb) {
@@ -34,12 +34,22 @@ function mulAsync(a, b, cb) {
 // subAsync(20, 10, res => console.log('sub', res));
 // mulAsync(10, 10, res => console.log('mul', res));
 
-// sequential calls
+// sequential 
+// pipeline
 // add -> sub -> mul
+// country -> states -> city
+// callback hell
+addAsync(10, 20, function (addRes) {
+    console.log("Add result ", addRes);
+    console.log("addAsync() finished");
 
-addAsync(10, 20, res => {
-    // execution completed
-    subAsync(res, 10, subRes => {
-        mulAsync(subRes, 10, finalRes => console.log("Final result is ", finalRes));
+    subAsync(addRes, 10, function (subResult) {
+        console.log("sub result", subResult);
+        console.log("subAsync() finished");
+
+        mulAsync(subResult, 10, function (mulRes) {
+            console.log('mul result', mulRes);
+            console.log("mulAsync() finished");
+        });
     });
 });
